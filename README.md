@@ -1,9 +1,54 @@
-# 🏠 House Price Detection Web App
+# 🏠 House Price Prediction Web App
 
-This project is a simple machine learning web application that predicts house prices based on user-input features such as number of rooms, area, and other property details.
+This project is an end-to-end machine learning solution designed to predict house prices based on user-provided property features. Built using **Streamlit** for the frontend and **Scikit-learn** for the backend model, this lightweight app allows real-time predictions through an interactive web interface.
 
-Built using **Python**, **Streamlit**, **Scikit-learn**, and **Pandas**, the app provides an interactive interface where users can input housing features and instantly receive a price prediction.
+## 🔍 Problem Statement
 
-The machine learning model used is a **Random Forest Regressor**, trained on a cleaned dataset (`Housing.csv`). Numerical values are preprocessed with median imputation, and categorical features are encoded using one-hot encoding. The model is evaluated using the R² score to ensure reasonable accuracy.
+Predicting house prices is a classic regression problem with real-world significance. By analyzing historical housing data, the objective is to train a machine learning model capable of generalizing price predictions on unseen property features.
 
-This app demonstrates how ML models can be integrated with simple front-end tools like Streamlit to create deployable data applications.
+## 🧠 Solution Overview
+
+The application is powered by a **Random Forest Regressor**, trained on a structured housing dataset. The pipeline includes:
+
+- Handling of missing values
+- One-hot encoding for categorical features
+- Feature scaling (if required)
+- Model evaluation using **R² score**
+
+The model is integrated directly into a **Streamlit app**, enabling live inference based on user inputs. Users can adjust numerical and categorical features using sliders, dropdowns, and input boxes to receive dynamic predictions.
+
+## 📦 Tech Stack
+
+- **Python 3.13**
+- **Pandas** for data manipulation
+- **Scikit-learn** for model training
+- **Streamlit** for UI & web deployment
+
+## ⚙️ Use Cases
+
+- Educational demo of regression deployment
+- Starter template for real-estate pricing apps
+- Quick MVP for property-related business logic
+
+## ✨ Highlights
+
+- Clean & responsive UI using Streamlit widgets
+- Modular, readable code structure
+- Reproducible results with consistent pipeline
+- Dataset-driven insights for user input
+
+## 📁 Dataset
+
+The app uses a CSV file (`Housing.csv`) containing various housing-related attributes such as:
+
+- Number of bedrooms/bathrooms
+- Total area
+- Construction year
+- Sale price (target)
+
+You can replace this with your own dataset by adjusting the input schema in the code.
+
+---
+
+This project is intended to demonstrate the simplicity of turning a trained machine learning model into an interactive web application — suitable for prototypes, learning purposes, or initial deployments.
+
