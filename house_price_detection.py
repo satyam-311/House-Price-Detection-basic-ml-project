@@ -16,8 +16,7 @@ st.title("🏠 House Price Prediction App")
 # Load the dataset
 @st.cache_data
 def load_data():
-    path = r"C:\Users\Satyam Mishra\OneDrive\Desktop\Housing.csv"
-    df = pd.read_csv(path)
+    df = pd.read_csv("housing.csv")
     return df
 
 df = load_data()
